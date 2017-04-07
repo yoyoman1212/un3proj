@@ -1,4 +1,5 @@
 #include "bryce.h";
+#include "adam.h";
 #include "stdafx.h"
 #include <iostream>
 #include <string>
