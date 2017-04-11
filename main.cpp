@@ -7,6 +7,8 @@
 
 using namespace std;
 
+char search_key;
+
 int main(int argc, char* c[], int l) {
 	
 	if (argc < 3) {
@@ -14,7 +16,7 @@ int main(int argc, char* c[], int l) {
 		return 1;
 	}
 
-	b_main();
+	b_main(*c[1]);
 
 	a_main();
 
