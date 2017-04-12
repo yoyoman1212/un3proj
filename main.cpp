@@ -4,7 +4,7 @@
 #include <ctype.h>
 #include <string>
 
-#include "color.h"
+#include "Colour.h"
 #include "bryce.h";
 #include "adam.h";
 
