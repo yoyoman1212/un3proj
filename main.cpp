@@ -39,7 +39,8 @@ int main(int argc, char* c[]) {
 
 	b_main(letter);
 
-	a_main(counter, *c[2], search_results);
+	a_main(counter, *c[2], search_results); // Adam, uses Bryce's retrieved data to complete head task
+						// alongside predetermined data from command prompt 
 
 	return 0;
 
