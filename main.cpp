@@ -34,7 +34,7 @@ int main(int argc, char* c[]) {
 			search_fails++;
 
 	if (search_fails == 30) {
-		cerr << "Error: Invalid character entered for arg 1." << endl;
+		cerr << "Error: Invalid character entered for arg 1. See usage." << endl;
 		return 3;
 	}
 
@@ -43,7 +43,7 @@ int main(int argc, char* c[]) {
 			search_fails_2++;
 
 	if (search_fails_2 == 10) {
-		cerr << "Error: Invalid character entered for arg 2." << endl;
+		cerr << "Error: Invalid character entered for arg 2. See usage." << endl;
 		return 4;
 	}
 
