@@ -1,5 +1,6 @@
 // All of this is borrowed code from https://www.codeproject.com/Articles/16431/Add-color-to-your-std-cout
 // by Vincent Godin  
+// Contributed by Adam to code
 
 #pragma once
 #include <iostream>
