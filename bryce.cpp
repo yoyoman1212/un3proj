@@ -8,6 +8,7 @@ using namespace std;
 
 string search_results[24];
 string characters[24];
+int counter = 0;
 
 void char_search(char key);
 
@@ -39,7 +40,7 @@ int b_main(char search_key) {
 }
 
 void char_search(char key) {
-	int counter = 0;
+	
 	for (int i = 0; i < 24; i++) {
 
 		if (characters[i].find_first_of(key) != -1) {
