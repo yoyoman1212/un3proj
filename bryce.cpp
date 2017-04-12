@@ -34,10 +34,7 @@ int b_main(char search_key) {
 	}
 
 	char_search(search_key);
-	///*
-	for (int i = 0; i < counter; i++)
-		cout << search_results[i] << endl;
-	//*/
+
 	return 0;
 
 }
