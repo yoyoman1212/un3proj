@@ -11,7 +11,7 @@
 using namespace std;
 
 char search_key;
-
+// Use command prompt with key seach item, space, number of items from search result to display as head
 int main(int argc, char* c[]) {
 
 	int search_fails = 0;
