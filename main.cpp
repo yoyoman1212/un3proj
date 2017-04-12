@@ -11,12 +11,12 @@
 using namespace std;
 
 char search_key;
-// Use command prompt with key seach item, space, number of items from search result to display as head
+
 int main(int argc, char* c[]) {
 
 	int search_fails = 0;
 
-	char accepted_chars[] = "abcdefghijklmnopqrstuvwxyz:76";
+	char accepted_chars[] = "abcdefghijklmnopqrstuvwxyz:76.";
 
 	char letter = tolower(*c[1]);
 
@@ -25,19 +25,21 @@ int main(int argc, char* c[]) {
 		return 1;
 	}
 
-	for (int i = 0; i < 29; i++) 
+	for (int i = 0; i < 30; i++) 
 		if (letter != accepted_chars[i])
 			search_fails++;
 
-	if (search_fails == 29) {
+	if (search_fails == 30) {
 		cerr << "Error: Invalid character entered." << endl;
 		return 3;
 	}
 
+	int numlines;
+	numlines = atoi(c[2]);
+
 	b_main(letter);
 
-	a_main(counter, *c[2], search_results); // Adam, uses Bryce's retrieved data to complete head task
-						// alongside predetermined data from command prompt 
+	a_main(counter, numlines, search_results);
 
 	return 0;
 
