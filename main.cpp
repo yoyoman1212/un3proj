@@ -33,9 +33,6 @@ int main(int argc, char* c[]) {
 		cerr << "Error: Invalid character entered." << endl;
 		return 3;
 	}
-		
-
-	cout << letter << endl;
 
 	b_main(letter);
 
