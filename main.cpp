@@ -1,5 +1,4 @@
 //ConsoleApplication1.cpp : Defines the entry point for the console application.
-//main.cpp done by bryce
 #include "stdafx.h";
 #include <iostream>
 #include <ctype.h>
@@ -14,7 +13,7 @@ using namespace std;
 char search_key;
 
 int main(int argc, char* c[]) {
-
+	//done by bryce
 	int search_fails = 0;
 	int search_fails_2 = 0;
 
@@ -34,7 +33,7 @@ int main(int argc, char* c[]) {
 			search_fails++;
 
 	if (search_fails == 30) {
-		cerr << "Error: Invalid character entered for arg 1. See usage." << endl;
+		cerr << "Error: Invalid character entered for arg 1. See usage" << endl;
 		return 3;
 	}
 
@@ -47,7 +46,7 @@ int main(int argc, char* c[]) {
 		return 4;
 	}
 
-
+	//done by adam + bryce
 	int numlines;
 	numlines = atoi(c[2]);
 
