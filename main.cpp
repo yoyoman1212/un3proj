@@ -1,6 +1,7 @@
 //ConsoleApplication1.cpp : Defines the entry point for the console application.
 #include "stdafx.h";
 #include <iostream>
+#include <string>
 
 #include "bryce.h";
 #include "adam.h";
@@ -18,7 +19,7 @@ int main(int argc, char* c[], int l) {
 
 	b_main(*c[1]);
 
-	a_main();
+	a_main(counter, *c[2], search_results);
 
 	return 0;
 
