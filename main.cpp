@@ -52,7 +52,7 @@ int main(int argc, char* c[]) {
 
 	b_main(letter);
 
-	a_main(counter, numlines, search_results);
+	a_main(counter, numlines, search_results); // takes command prompt + Bryce's retrieved data into a_main
 
 	return 0;
 
