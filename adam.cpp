@@ -16,8 +16,8 @@ int a_main(int count, int dis_size, string sresult[24]) {
 	for (int i = 0; i < count; i++)  // count is brough from Bryce's file to know the number of characters that filled search parameters
 		found_chars[i] = sresult[i]; // To not have oversized array and be able ot do tail copy all elements into new array
 	
-	cout << blue << "Would you like to display " << yellow << "head" << blue << " with " << count << " elements or " << yellow << "tail" << blue
-		<< " with " << count << " elements?: " << green; // head and tail highlighed in different colours as they are options
+	cout << blue << "Would you like to display " << yellow << "head" << blue << " with " << dis_size << " elements or " << yellow << "tail" << blue
+		<< " with " << dis_size << " elements?: " << green; // head and tail highlighed in different colours as they are options
 	cin >> select; 
 
 	if (select == "head") // first 'dis_size" elements of the array
@@ -34,7 +34,7 @@ int a_main(int count, int dis_size, string sresult[24]) {
 	else if (select == "tail") // last 'dis_size" elements of the array
 		for (int i = count - 1; i > -1; i--) { // -1 because array starts at[0] not [1]
 
-			if (i == dis_size - 1) // - 1 because array starts at [0] not [1]
+			if (i == count - dis_size - 1) // - 1 because array starts at [0] not [1]
 				return 0;
 
 			else
