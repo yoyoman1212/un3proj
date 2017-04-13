@@ -34,7 +34,7 @@ int a_main(int count, int dis_size, string sresult[24]) {
 	else if (select == "tail") // last 'dis_size" elements of the array
 		for (int i = count - 1; i > -1; i--) { // -1 because array starts at[0] not [1]
 
-			if (i == count - dis_size - 1) // - 1 because array starts at [0] not [1]
+			if (i < count - dis_size) // - 1 because array starts at [0] not [1]
 				return 0;
 
 			else
